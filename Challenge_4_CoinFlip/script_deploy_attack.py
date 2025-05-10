@@ -3,7 +3,7 @@ import time
 
 def main():
 
-    admin = accounts.load("mm2")
+    admin = accounts.load("mm2") # Use wallet which has testnet ether in it.
 
     contract = project.CoinFlipAttack.deploy(0x0ed1ea33f4fA8B50992aE1d5F0cf876A0ac76fCd,sender=admin)
 
