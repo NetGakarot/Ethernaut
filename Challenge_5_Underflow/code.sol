@@ -1,6 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
+// Solution:
+// contract.transfer("address",21)
+// As in solidity 0.6.0 underflow error was passed silently so require(balances[msg.sender] - _value >= 0); will do 20 - 21.
+// Hence creating free tokens.
+
 contract Token {
     mapping(address => uint256) balances;
     uint256 public totalSupply;
