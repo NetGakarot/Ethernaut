@@ -14,3 +14,10 @@
 Final balance User - Token 1 - 110 , Token 2 - 20
 Final balance contract - Token 1 - 0 , Token 2 - 90
 */
+await contract.swap(token1.address, token2.address, 10)
+await contract.swap(token2.address, token1.address, 20)
+await contract.swap(token1.address, token2.address, 24)
+await contract.swap(token2.address, token1.address, 30)
+await contract.swap(token1.address, token2.address, 41)
+await contract.swap(token2.address, token1.address, 45)
+
